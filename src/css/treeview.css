@@ -1,0 +1,13 @@
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-shape: "M 3,0 L -1,2 L -1, 1 L -3,1 L -3,-1 L -1,-1 L -1,-2 z";
+    -fx-background-color: green;
+}
+
+.tree-cell:expanded .tree-disclosure-node .arrow {
+    -fx-shape: "M 3,0 L -1,2 L -1, 1 L -3,1 L -3,-1 L -1,-1 L -1,-2 z";
+    -fx-background-color: red;
+    -fx-rotate: 90;
+}
+
+
+

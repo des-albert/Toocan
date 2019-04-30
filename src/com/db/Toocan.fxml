@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.ToocanController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Toocan.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonPartManager" layoutX="322.0" layoutY="62.0" mnemonicParsing="false" onAction="#ButtonPartManagerOnAction" prefHeight="31.0" prefWidth="157.0" text="Manage Parts" />
+      <Button fx:id="buttonBaseQuit" layoutX="501.0" layoutY="344.0" mnemonicParsing="false" onAction="#ButtonBaseQuitOnAction" text="Quit" />
+       <Label fx:id="labelBaseStatus" layoutX="75.0" layoutY="349.0" prefHeight="21.0" prefWidth="377.0" />
+      <Button fx:id="buttonBuildManager1" layoutX="322.0" layoutY="127.0" mnemonicParsing="false" onAction="#ButtonBuildOnAction" prefHeight="31.0" prefWidth="157.0" text="Build" />
+      <Label layoutX="69.0" layoutY="193.0" text="oocan" textFill="#1eb22e">
+         <font>
+            <Font name="Moanas" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="174.0" text="T" textFill="#1eb22e">
+         <font>
+            <Font name="Moanas" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

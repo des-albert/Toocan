@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1100.0" styleClass="anchor-pane" stylesheets="@../../css/pane.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.BuildController">
+   <children>
+      <Button fx:id="buttonClose" layoutX="905.0" layoutY="208.0" mnemonicParsing="false" onAction="#ButtonCloseOnAction" prefHeight="31.0" prefWidth="57.0" text="Quit" />
+      <TreeView fx:id="treeViewParts" layoutX="46.0" layoutY="50.0" onDragDetected="#partDragDetected" prefHeight="762.0" prefWidth="341.0" stylesheets="@../../css/treeview.css" />
+      <TreeView fx:id="treeViewBuild" layoutX="400.0" layoutY="50.0" onDragDetected="#buildDragDetected" prefHeight="762.0" prefWidth="341.0" stylesheets="@../../css/treeview.css" />
+      <Button fx:id="buttonExport" layoutX="788.0" layoutY="208.0" mnemonicParsing="false" onAction="#ButtonExportOnAction" prefHeight="31.0" prefWidth="74.0" text="Export" />
+      <Button fx:id="buttonOpenJson" layoutX="1009.0" layoutY="57.0" mnemonicParsing="false" onAction="#openJsonOnAction" prefHeight="31.0" prefWidth="57.0" text="Load" />
+      <Button fx:id="buttonSaveJson" layoutX="1009.0" layoutY="104.0" mnemonicParsing="false" onAction="#saveJsonOnAction" prefHeight="31.0" prefWidth="57.0" text="Save" />
+      <ImageView fx:id="imageTrash" fitHeight="118.0" fitWidth="123.0" layoutX="806.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/trash.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="14.0" prefHeight="21.0" prefWidth="51.0" text="Parts" textFill="#1117c9" />
+      <Label layoutX="428.0" layoutY="14.0" prefHeight="21.0" prefWidth="51.0" text="Build" textFill="#1117c9" />
+      <Label fx:id="labelBuildStatus" layoutX="46.0" layoutY="768.0" />
+      <TableView fx:id="tableViewSummary" layoutX="764.0" layoutY="257.0" prefHeight="555.0" prefWidth="263.0">
+         <columns>
+            <TableColumn fx:id="tableColumnName" prefWidth="137.0" text="Total Name" />
+            <TableColumn fx:id="tableColumnValue" prefWidth="125.0" text="Value" />
+         </columns>
+      </TableView>
+      <Button fx:id="buttonPartCollapse" layoutX="305.0" layoutY="9.0" mnemonicParsing="false" onAction="#buttonPartCollapseOnAction" prefHeight="31.0" prefWidth="82.0" text="Collapse" />
+      <Button fx:id="buttonBuildCollapse" layoutX="659.0" layoutY="9.0" mnemonicParsing="false" onAction="#buttonBuildCollapseOnAction" prefHeight="31.0" prefWidth="82.0" text="Collapse" />
+   </children>
+</AnchorPane>

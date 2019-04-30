@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Sep 30 17:33:52 PDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0166-2d0b-af68-00000eee5168 
+on database directory C:\Data\Java\IdeaProjects\Toocan\dbParts with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1e67b872 
+Loaded from file:/C:/Data/Java/IdeaProjects/Toocan/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=10.0.2+13
+user.dir=C:\Data\Java\IdeaProjects\Toocan
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
